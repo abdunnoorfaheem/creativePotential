@@ -10,7 +10,7 @@ const NavBar = () => {
             <img src={Logo} alt="" />
             <ul className='flex gap-6'>
                 <li><Link to='/'>Home</Link></li>
-                <li>Courses</li>
+                <li><Link to="/courses">Courses</Link></li>
                 <li><Link to="/about">About Us</Link></li>
                 <li>Pricing</li>
                 <li>Contact</li>

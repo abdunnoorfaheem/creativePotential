@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import RootRouter from './components/RootRouter'
 import Footer from './pages/Footer'
+import Courses from './pages/Courses'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
     <Route element={<RootRouter/>}>
       <Route path="/" element={<Home/>}/>
       <Route path='/about'element={<AboutUs/>}/>
+      <Route path="/courses" element={<Courses/>}/>
       <Route path='/footer' element={<Footer/>}/>
     </Route>
   ))
