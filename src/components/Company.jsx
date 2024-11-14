@@ -12,7 +12,7 @@ import Netflix from '../assets/netflix.png'
 const Company = () => {
   return (
    <section className='bg-[#F0F0F0] pb-10'>
-    <div className='mx-auto p-1 w-[1580px] h-[102px] flex  justify-center bg-[#FFFFFF]'>
+    <div className='mx-auto p-1 w-[1580px] h-[102px] flex  justify-center bg-[#FFFFFF] rounded-lg'>
         
         <img src={Zapier} alt="" />
         <img src={Spotify} alt="" />
