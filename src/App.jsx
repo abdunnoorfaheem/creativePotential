@@ -1,33 +1,37 @@
-
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import './App.css'
-import Header from './components/Header'
-import NavBar from './components/NavBar'
-import { createElement } from 'react'
-import { FaCreativeCommonsBy } from 'react-icons/fa6'
-import Home from './pages/Home'
-import AboutUs from './pages/AboutUs'
-import RootRouter from './components/RootRouter'
-import Footer from './pages/Footer'
-import Courses from './pages/Courses'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+import { createElement } from "react";
+import { FaCreativeCommonsBy } from "react-icons/fa6";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import RootRouter from "./components/RootRouter";
+import Footer from "./pages/Footer";
+import Courses from "./pages/Courses";
 
 function App() {
-  
-
-  let myRoute =createBrowserRouter(createRoutesFromElements(
-    <Route element={<RootRouter/>}>
-      <Route path="/" element={<Home/>}/>
-      <Route path='/about'element={<AboutUs/>}/>
-      <Route path="/courses" element={<Courses/>}/>
-      <Route path='/footer' element={<Footer/>}/>
-    </Route>
-  ))
+  let myRoute = createBrowserRouter(
+    createRoutesFromElements(
+      <Route element={<RootRouter />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/footer" element={<Footer />} />
+      </Route>
+    )
+  );
 
   return (
     <>
-    <RouterProvider router={myRoute}/>
+      <RouterProvider router={myRoute} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
